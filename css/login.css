@@ -1,0 +1,57 @@
+.formcls{
+  color:blue;
+  border:2px solid red;
+  float:right;
+align-items: center;
+  background-color: beige;
+  margin-top: 5%;;
+  margin-right: 3%;
+  padding:30px;
+
+
+}
+.formcls h2{
+  text-align:center ;
+}
+.formcls logincnt{
+  text-align:center;
+  height:0.2em;
+
+}
+#but{
+  width:100%;
+  color:white;
+  background-color: blue;
+  
+  
+}
+.bgimg {
+  /* The image used */
+  background-color: blue;
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+carousel-inner .carousel-item {
+  margin-top:25%;
+  padding:0;
+  align-items: center;
+transition: -webkit-transform 0s ease;
+transition: transform 0s ease;
+transition: transform 0s ease, -webkit-transform 0s ease;
+}
+*body{
+  margin:0;
+  padding:0;
+  
+}
+
+.footer-copyright{
+  background-color: green;
+}

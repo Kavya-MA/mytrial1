@@ -1,0 +1,26 @@
+.mov{
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    color:blue;
+    background-color: cyan;
+}
+.cont1 {
+    margin-left: 5%;
+    align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-size 15px;
+    text-align: justify;
+    margin-right: 5%;
+    
+
+    
+}
+*body{
+    background-color:green;
+    margin:0%;
+    padding: 0%;
+}
+.footer-copyright{
+    background-color: green;
+}
