@@ -14,28 +14,45 @@
         background-size: cover;
       }
       </style>
-    <link rel="stylesheet" href=css/login.css>
+<link rel="stylesheet" href=css/login.css>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script defer src="login.js"></script>
 </head>
 <body>
   
   
-    <form action="#" class="formcls">
+    <form action="index.html" class="formcls" onsubmit=" return validate();">
         <h2>User Login</h2>
         <br>
         <div class="logincont">
-          <label > User Name</label>
+          <label for="email" >Email</label>
           <br>
-          <input type="text" placeholder="Enter your UserName">
+          <input type="text" placeholder="Enter your Email" id="email" required >
         <br>
+        
         <br>
-         <label > Password</label>
+        <label for="error" id="error"></label>
+        <br>
+         <label for="password" > Password</label>
          <br>
-         <input type="password" placeholder="Enter your Password">
-       </div>
+        <!-- <input type="password" placeholder="Enter your Password" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="return validate()" required>
+         <span id="StrengthDisp" class="badge displayBadge"></span>-->
+         <!--<input name="password" id="pwd" type="text" size="15" maxlength="100" />
+         <span id="strength">Type Password</span>-->
+         <!--<input type="password" id="pass" onkeyup="CheckPasswordStrength(this.value)" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="return validate()"  required>
+        <br><br>
+<label>Password Strength: </label><strong id="password_strength"></strong><br><br>-->
+<input type="password" placeholder="Enter your Password" id="pwd" onkeyup="return passstrength(this.value);"required >
+<br>
+<label for="error" id="perror"></label>
+<br>
+<span id="password_strength"></span>
+<!--<span id="strength">Type Password</span>-->
+</div>
        <br>
-       <div >
-         <button id="but">Login</button>
+       <div>
+         <button  type ="submit" id="but">Login</button>
+         
        </div>
        <br>
        <div class="login">
@@ -44,13 +61,15 @@
        </div>
        
       </form>
-    </form>
+ 
+      <script src="login.js"></script>
     
     
-      </div>
+      
+      
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+      <script src="login.js"></script>
 </body>
 </html>
